@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "a870538a-d27d-436d-b8b6-99c1031ce7e7",
+		"name": "New Collection",
+		"description": "StartFragmentVarnan Contact APIEndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49919536",
+		"_collection_link": "https://nehasinghagra0101-8575506.postman.co/workspace/1a79c6b7-41e2-4ccd-899b-db38b2ee9051/collection/49919536-a870538a-d27d-436d-b8b6-99c1031ce7e7?action=share&source=collection_link&creator=49919536"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Test user\",\r\n  \"email\": \"testuser@gmail.com\",\r\n  \"phone\": \"908765498\",\r\n  \"message\": \"This is a message\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+					"protocol": "https",
+					"host": [
+						"vernanbackend",
+						"ezlab",
+						"in"
+					],
+					"path": [
+						"api",
+						"contact-us",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
