@@ -1,17 +1,18 @@
-body{
+body {
     height: 100%;
     width: 100%;
     background-color: #e7a09d;
 }
-.page{
-  background-image: url('../assets/background-img.png'); 
-  background-repeat: no-repeat; 
-  background-size: cover;
-  background-position: center;
-  min-height: 100vh;
+
+.page {
+    background-image: url('../assets/background-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
-.pagetitle{
+.pagetitle {
     margin-top: 5%;
     text-shadow: 0px 5px 5px black;
     font-family: cursive;
@@ -19,20 +20,22 @@ body{
 
 /* card */
 .polaroid-card {
-  background: white;
-  border-radius: 12px;
-  padding: 10px 10px 25px 10px;
-  margin: 10px auto;
-  width: 100%;
-  max-width: 320px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  overflow: hidden;
+    background: white;
+    border-radius: 12px;
+    padding: 10px 10px 25px 10px;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden;
 }
+
 .polaroid-card:hover {
-  transform: scale(1.03);
-  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
+    transform: scale(1.03);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
 }
+
 /* Tilted Effects */
 .tilt-left {
     transform: rotate(-5deg);
@@ -44,77 +47,89 @@ body{
 
 /* --- Tape Effect--- */
 .service-item {
-  padding: 4%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden; 
+    padding: 4%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .service-item::before {
-  content: "";
-  position: absolute;
-  width: 90px;
-  height: 22px;
-  background: rgb(185, 133, 82);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
-  z-index: 10;
-  opacity: 0.8;
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 22px;
+    background: rgb(185, 133, 82);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    opacity: 0.8;
 }
 
 /* Tape 1: Top-Left */
-.service-item:nth-child(1)::before { top: 60px; left: 0; transform: rotate(-30deg); }
+.service-item:nth-child(1)::before {
+    top: 60px;
+    left: 0;
+    transform: rotate(-30deg);
+}
 
 /* Tape 2: Top-Middle */
-.service-item:nth-child(2)::before { top: 40px; left: 40%; transform: rotate(-20deg); }
+.service-item:nth-child(2)::before {
+    top: 40px;
+    left: 40%;
+    transform: rotate(-20deg);
+}
 
 /* Tape 3: Top-Right */
-.service-item:nth-child(3)::before { top: 70px; right: 0; transform: rotate(30deg); }
+.service-item:nth-child(3)::before {
+    top: 70px;
+    right: 0;
+    transform: rotate(30deg);
+}
 
 /* Tablets (992px and below) */
 @media (max-width: 992px) {
-  .pagetitle {
-    font-size: 1.7rem;
-  }
+    .pagetitle {
+        font-size: 1.7rem;
+    }
 
-  .polaroid-card {
-    max-width: 280px;
-  }
+    .polaroid-card {
+        max-width: 280px;
+    }
 }
 
 /* Medium screens (768px and below) */
 @media (max-width: 768px) {
-  .pagetitle {
-    font-size: 1.5rem;
-    margin-top: 20%;
-  }
+    .pagetitle {
+        font-size: 1.5rem;
+        margin-top: 20%;
+    }
 
-  .row {
-    row-gap: 40px;
-  }
+    .row {
+        row-gap: 40px;
+    }
 }
 
 /* Small mobile (576px and below) */
 @media (max-width: 576px) {
-  .pagetitle {
-    margin-top: 10%;
-  }
+    .pagetitle {
+        margin-top: 10%;
+    }
 
-  .caption {
-    font-size: 1rem;
-  }
+    .caption {
+        font-size: 1rem;
+    }
 
-  .service-item::before {
-    width: 100px;
-    height: 30px;
-    margin-top: -10px;
-  }
+    .service-item::before {
+        width: 100px;
+        height: 30px;
+        margin-top: -10px;
+    }
 
-  .service-item:nth-child(1)::before{
-    margin-left: 20px;
-  }
-  
-  .service-item:nth-child(3)::before{
-    margin-right: 40px;
-  }
+    .service-item:nth-child(1)::before {
+        margin-left: 20px;
+    }
+
+    .service-item:nth-child(3)::before {
+        margin-right: 40px;
+    }
 }
