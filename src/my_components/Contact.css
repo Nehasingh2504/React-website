@@ -1,24 +1,13 @@
-:root {
-  --pale-pink: #fef4f4;
-  --text-dark: #34495e;
-  --text-pink: #e7a09d;
-}
-
 /* Background setup */
 .main-page-container {
   background-image: url('../assets/background-img.png'); 
   background-repeat: no-repeat; 
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
 }
 
 /* --- Left Column --- */
@@ -38,19 +27,19 @@
   max-width: 600px; 
   border: none;
   border-radius: 15px;
-  padding: 40px;
+  padding: 30px;
   margin: 0 auto;
 }
 
 .form-title {
   font-family: 'ScriptFont', cursive;
-  font-size: 20px;
+  font-size: 30px;
   display: flex;
   justify-content: center;
 }
 
 .form-subtitle {
-  font-family: 'SerifFont', serif;
+  font-family: "Georgia", serif;
   font-size: 1.1rem;
   margin-top: 5px;
   display: flex;
@@ -76,13 +65,12 @@
   border-radius: 30px; 
   font-weight: 600;
   font-size: 1.1rem;
-  transition: background-color 0.3s ease;
   display: flex;
   justify-content: center;
 }
 
 .custom-submit-btn:hover {
-  background-color: #d18d8a;
+  background-color: #d36862;
   color: white;
 }
 
@@ -92,7 +80,7 @@
 }
 
 .contact-link {
-  color: var(--text-dark);
+  color: #34495e;
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: 500;
@@ -100,7 +88,7 @@
 }
 
 .contact-link:hover {
-  color: var(--text-pink);
+  color: orangered;
   text-decoration: underline;
 }
 
@@ -118,38 +106,22 @@
 /* Mobiles (≤ 768px) */
 @media (max-width: 768px) {
   .main-page-container {
+    background-image: url('../assets/background-2.png');
     padding: 20px 10px;
   }
   .form-title {
-    font-size: 18px;
+    font-size: 25px;
     justify-content: center;
   }
   .form-subtitle {
     font-size: 0.95rem;
     text-align: center;
   }
-  .contact-form-card {
-    width: 100%;
-    padding: 20px;
-  }
   .custom-submit-btn {
     width: 100%;
-    justify-content: center;
   }
-  .contact-info {
-    text-align: center;
+  .row{
+    row-gap: 0;
   }
 }
 
-/* Small Mobiles (≤ 480px) */
-@media (max-width: 480px) {
-  .contact-form-card {
-    padding: 15px;
-  }
-  .form-title {
-    font-size: 17px;
-  }
-  .form-subtitle {
-    font-size: 0.9rem;
-  }
-}
