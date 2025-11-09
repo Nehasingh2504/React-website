@@ -63,7 +63,7 @@ const Contact = () => {
 
   return (
     <div className="main-page-container position-relative overflow-hidden">
-      <div className="container-fluid py-5">
+      <div className="container-fluid body-content py-4">
         <div className="row justify-content-center align-items-stretch min-vh-80">
           {/* LEFT COLUMN: Intro Text */}
           <div className="col-lg-5 d-flex flex-column justify-content-center text-center text-lg-start mb-5 mb-lg-0 pe-lg-5">
@@ -141,9 +141,8 @@ const Contact = () => {
                 {/* ✅ Status Message */}
                 {status.message && (
                   <div
-                    className={`mt-3 text-center ${
-                      status.type === "success" ? "text-success" : "text-danger"
-                    }`}
+                    className={`mt-3 text-center ${status.type === "success" ? "text-success" : "text-danger"
+                      }`}
                   >
                     {status.message}
                   </div>
@@ -153,10 +152,7 @@ const Contact = () => {
               {/* Contact Info */}
               <div className="contact-info mt-5 text-center text-lg-start">
                 <p className="mb-1">
-                  <a
-                    href="mailto:vernita@varnanfilms.co.in"
-                    className="contact-link"
-                  >
+                  <a href="mailto:vernita@varnanfilms.co.in" className="contact-link">
                     vernita@varnanfilms.co.in
                   </a>
                 </p>
@@ -175,4 +171,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
