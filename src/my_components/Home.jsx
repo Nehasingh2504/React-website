@@ -20,7 +20,7 @@ const Home = () => {
                         {/* Horizontal Line */}
                         <hr className="d-none d-lg-block my-4" style={{ borderColor: '#e7a09d', opacity: 1, width: '40%' }} />
 
-                        {/* Sub-Title / Categories (using custom style: category-text) */}
+                        {/* Sub-Title */}
                         <h3 className="category-text my-4 text-center">
                             <span className="text-pink">Films</span> . Brands . Art
                         </h3>
@@ -40,3 +40,4 @@ const Home = () => {
 };
 
 export default Home;
+
