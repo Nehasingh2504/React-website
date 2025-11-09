@@ -1,8 +1,6 @@
 import React from 'react';
-import './ServicesPage.css'; 
-
-// Placeholder images (adjust paths as needed)
-import filmProductionImg from '../assets/film-production.png'; 
+import './ServicesPage.css';
+import filmProductionImg from '../assets/film-production.png';
 import brandingImg from '../assets/branding.png';
 import artCurationImg from '../assets/art-curation.png';
 
@@ -10,7 +8,6 @@ function ServicesPage() {
 
   return (
     <div className="page container-fluid p-0 m-0 h-100 text-center">
-
       <div className="container py-5">
         <div className="mx-auto mb-4">
           <h3 className="pagetitle">The storyboard reveals the breadth of our craft.</h3>
@@ -20,7 +17,7 @@ function ServicesPage() {
         <div className="row justify-content-center mt-5 gx-0">
           <div className="col-lg-4 col-md-6 col-sm-12 service-item">
             <div className="polaroid-card tilt-left shadow-lg border-0 bg-white">
-              <div className="image-wrapper"> 
+              <div className="image-wrapper">
                 <img src={filmProductionImg} alt="Film Production" className="img-fluid" />
               </div>
               <p className="caption mt-2 fw-bold">Film Production</p>
@@ -29,12 +26,10 @@ function ServicesPage() {
 
           {/* Item 2: Branding (Straight) */}
           <div className="col-lg-4 col-md-6 col-sm-12 service-item">
-            {/* Used Bootstrap 'shadow-lg', 'border-0', 'bg-white' */}
             <div className="polaroid-card shadow-lg border-0 bg-white">
               <div className="image-wrapper border-0">
                 <img src={brandingImg} alt="Branding" className="img-fluid" />
               </div>
-              {/* Used Bootstrap 'fw-bold' for font weight */}
               <p className="caption mt-2 fw-bold">Branding</p>
             </div>
           </div>
@@ -48,12 +43,8 @@ function ServicesPage() {
               <p className="caption mt-2 fw-bold">Art Curation</p>
             </div>
           </div>
-
         </div>
       </div>
-      
-      {/* Static pattern border at the bottom (still needs custom CSS) */}
-      <div className="bottom-mandala-border"></div>
     </div>
   );
 }
