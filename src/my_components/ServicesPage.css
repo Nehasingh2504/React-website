@@ -1,34 +1,23 @@
-/* src/components/ServicesPage.css */
-
-/* Global Reset (Required for full screen) */
 body{
     height: 100%;
     width: 100%;
+    background-color: #e7a09d;
 }
 .page{
-  background-image: url('../assets/background-img.png');
-  background-repeat: no-repeat;
-  background-size: cover;              /* Always covers full container */
-  background-position: center center;  /* Center image properly */
-  background-attachment: fixed;        /* Keeps background steady while scrolling */
+  background-image: url('../assets/background-img.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
   min-height: 100vh;
-
 }
-/* --- Storyboard Header Banner Effect (MUST BE CUSTOM) --- */
+
 .pagetitle{
     margin-top: 5%;
     text-shadow: 0px 5px 5px black;
     font-family: cursive;
 }
 
-.service-item {
-  padding: 20px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  overflow: hidden; /* Ensures image stays within container */
-}
-
+/* card */
 .polaroid-card {
   background: white;
   border-radius: 12px;
@@ -38,7 +27,7 @@ body{
   max-width: 320px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  overflow: hidden; /* Keeps image clipped inside */
+  overflow: hidden;
 }
 .polaroid-card:hover {
   transform: scale(1.03);
@@ -54,6 +43,14 @@ body{
 }
 
 /* --- Tape Effect--- */
+.service-item {
+  padding: 4%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow: hidden; 
+}
+
 .service-item::before {
   content: "";
   position: absolute;
@@ -66,25 +63,13 @@ body{
 }
 
 /* Tape 1: Top-Left */
-.service-item:nth-child(1)::before { top: 45px; left: 0; transform: rotate(-30deg); }
+.service-item:nth-child(1)::before { top: 60px; left: 0; transform: rotate(-30deg); }
 
 /* Tape 2: Top-Middle */
-.service-item:nth-child(2)::before { top: 20px; left: 40%; transform: rotate(-20deg); }
+.service-item:nth-child(2)::before { top: 40px; left: 40%; transform: rotate(-20deg); }
 
 /* Tape 3: Top-Right */
-.service-item:nth-child(3)::before { top: 40px; right: 0; transform: rotate(30deg); }
-
-
-/* --- Bottom Mandala Border (MUST BE CUSTOM) --- */
-.bottom-mandala-border {
-    height: 100px; 
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    /* background-image: url(...); */
-}
+.service-item:nth-child(3)::before { top: 70px; right: 0; transform: rotate(30deg); }
 
 /* Tablets (992px and below) */
 @media (max-width: 992px) {
@@ -95,58 +80,41 @@ body{
   .polaroid-card {
     max-width: 280px;
   }
-
-  .service-item::before {
-    width: 70px;
-    height: 18px;
-  }
 }
 
 /* Medium screens (768px and below) */
 @media (max-width: 768px) {
   .pagetitle {
     font-size: 1.5rem;
+    margin-top: 20%;
   }
 
   .row {
     row-gap: 40px;
-  }
-
-  .tilt-left,
-  .tilt-right {
-    transform: rotate(0deg); /* Remove tilt for mobile */
-  }
-
-  .polaroid-card {
-    max-width: 85%;
-  }
-
-  .service-item::before {
-    display: none; /* Hide tape for clean mobile look */
   }
 }
 
 /* Small mobile (576px and below) */
 @media (max-width: 576px) {
   .pagetitle {
-    font-size: 1.3rem;
     margin-top: 10%;
-  }
-
-  .polaroid-card {
-    max-width: 90%;
-    padding: 10px 10px 20px;
   }
 
   .caption {
     font-size: 1rem;
   }
 
-  .bottom-mandala-border {
-    height: 60px;
+  .service-item::before {
+    width: 100px;
+    height: 30px;
+    margin-top: -10px;
   }
 
-  .page {
-    padding-bottom: 80px;
+  .service-item:nth-child(1)::before{
+    margin-left: 20px;
+  }
+  
+  .service-item:nth-child(3)::before{
+    margin-right: 40px;
   }
 }
