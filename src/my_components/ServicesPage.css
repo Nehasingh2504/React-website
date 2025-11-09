@@ -122,7 +122,7 @@ body {
     .service-item::before {
         width: 100px;
         height: 30px;
-        margin-top: -10px;
+        margin-top: -20px;
     }
 
     .service-item:nth-child(1)::before {
@@ -130,6 +130,8 @@ body {
     }
 
     .service-item:nth-child(3)::before {
-        margin-right: 40px;
+        margin-top: -30px;
+        margin-right: 10px;
     }
 }
+
