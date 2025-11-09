@@ -1,0 +1,41 @@
+/* Custom CSS to override Bootstrap for a horizontal slide */
+
+/* Style for the hamburger icon if needed */
+.custom-hamburger-icon {
+    width: 30px; /* Adjust size as needed */
+    height: auto;
+}
+
+/* 1. Initial State: Hidden and compact */
+.custom-sliding-menu {
+    /* Set the initial width to zero and hide content */
+    max-width: 0; 
+    overflow: hidden;
+    
+    /* Add the transition for a smooth slide */
+    transition: max-width 0.4s ease-in-out;
+}
+
+/* 2. Target State: Open and visible */
+/* When Bootstrap's 'show' class is applied by JavaScript */
+.custom-sliding-menu.show {
+    /* Use a large enough width to show all content */
+    max-width: 400px; 
+}
+
+/* 3. Ensure the links are in a single line */
+.custom-nav-links {
+    /* Use flexbox to keep Home and About Us horizontal */
+    display: flex; 
+    flex-direction: row; 
+    
+    /* Remove default Bootstrap margins/paddings if they interfere */
+    padding-left: 10px; 
+    margin: 0;
+}
+
+/* 4. Spacing between links */
+.custom-nav-links .nav-item {
+    margin-right: 15px; /* Spacing between 'Home' and 'About Us' */
+    white-space: nowrap; /* Prevent links from wrapping to new line */
+}

@@ -1,0 +1,89 @@
+
+:root {
+  --pale-pink: #fef4f4; /* Background color */
+  --text-dark: #34495e; /* Dark navy/gray for large text */
+  --text-pink: #e7a09d; /* Coral/pink color for accents */
+}
+
+.mainpage-container {
+  min-height: 100vh;
+  background-color: var(--pale-pink);
+  padding-top: 20px;
+}
+
+/* --- 2. Typography Styling --- */
+.main-title {
+  color: #34495e;
+  font-size: 3rem;
+  font-family: 'SerifFont', serif; 
+  font-style: italic;
+  display: block;
+  line-height: 80px;
+}
+
+.category-text {
+  font-size: 1.5rem;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.text-pink {
+  color: var(--text-pink) !important;
+}
+
+.description-text {
+  color: #6c757d; 
+  line-height: 1.8;
+  max-width: 550px; 
+}
+
+.mandala-background {
+  width: 350px;
+  height: 350px;
+  background-image: url('../assets/HOME.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.logo-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  color: var(--text-dark);
+  letter-spacing: -2px;
+}
+
+.logo-v {
+  color: var(--text-pink);
+  margin-right: -10px; 
+}
+
+.custom-menu-button {
+  background: none;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  width: 30px;
+}
+
+.menu-bar {
+  width: 100%;
+  height: 2px;
+  background-color: #34495e;
+  margin: 4px 0;
+}
+@media(max-width: 990px) {
+    .mandala-background{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .main-title{
+        font-size: 2.5rem;
+        line-height: 50px;
+    }
+}

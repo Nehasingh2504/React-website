@@ -1,0 +1,155 @@
+:root {
+  --pale-pink: #fef4f4;
+  --text-dark: #34495e;
+  --text-pink: #e7a09d;
+}
+
+/* Background setup */
+.main-page-container {
+  background-image: url('../assets/background-img.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* --- Left Column --- */
+.contact-intro-text {
+  color: #34495e;
+  font-size: 20px;
+  font-family: 'SerifFont', serif; 
+  font-style: italic;
+  display: block;
+  line-height: 1.6;
+}
+
+/* --- Right Column (Form Card) --- */
+.contact-form-card {
+  height: auto;
+  width: 100%; /* Fix overflow on small screens */
+  max-width: 600px; /* Prevent form from becoming too wide */
+  border: none;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 0 auto; /* Center form on smaller screens */
+}
+
+.form-title {
+  font-family: 'ScriptFont', cursive;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.form-subtitle {
+  font-family: 'SerifFont', serif;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-form-control {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px 15px;
+  font-size: 1rem;
+  background-color: #f8f8f8;
+}
+
+.custom-form-control::placeholder {
+  color: #a0a0a0;
+}
+
+.custom-submit-btn {
+  background-color: orangered;
+  color: white;
+  border: none;
+  border-radius: 30px; 
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+  display: flex;
+  justify-content: center;
+}
+
+.custom-submit-btn:hover {
+  background-color: #d18d8a;
+  color: white;
+}
+
+/* --- Contact Info --- */
+.contact-info {
+  margin-top: 30px;
+}
+
+.contact-link {
+  color: var(--text-dark);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--text-pink);
+  text-decoration: underline;
+}
+
+/* Tablets (≤ 992px) */
+@media (max-width: 992px) {
+  .contact-intro-text {
+    display: none;
+  }
+  .contact-form-card {
+    padding: 30px;
+    max-width: 90%;
+  }
+}
+
+/* Mobiles (≤ 768px) */
+@media (max-width: 768px) {
+  .main-page-container {
+    padding: 20px 10px;
+  }
+  .form-title {
+    font-size: 18px;
+    justify-content: center;
+  }
+  .form-subtitle {
+    font-size: 0.95rem;
+    text-align: center;
+  }
+  .contact-form-card {
+    width: 100%;
+    padding: 20px;
+  }
+  .custom-submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .contact-info {
+    text-align: center;
+  }
+}
+
+/* Small Mobiles (≤ 480px) */
+@media (max-width: 480px) {
+  .contact-form-card {
+    padding: 15px;
+  }
+  .form-title {
+    font-size: 17px;
+  }
+  .form-subtitle {
+    font-size: 0.9rem;
+  }
+}

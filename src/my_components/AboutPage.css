@@ -1,0 +1,89 @@
+html, body, #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.about-page {
+    background-image: url('../assets/about.png'); 
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.motto-text {
+    font-family:cursive; 
+    line-height: 1.5;
+    font-size: 30px; 
+    text-align: right;
+    padding-top: 50px; 
+    text-shadow: 1px 4px 5px black;
+}
+
+.mission-text p {
+    font-size: 1rem;
+    line-height: 1.7;
+    max-width: 85%;
+    text-align: center;
+}
+
+.stats-section {
+    padding-top: 40px;
+}
+
+.stat-box {
+    width: 150px; 
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.stat-box:nth-child(1) {
+    transform: rotate(-3deg);
+}
+.stat-box:nth-child(2) {
+    transform: rotate(2deg);
+    margin-top: 20px; /* Slight vertical offset */
+}
+.stat-box:nth-child(3) {
+    transform: rotate(5deg);
+}
+
+.graphic-overlay {
+    position: absolute;
+    bottom: -50px; 
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+.mountain-img {
+    width: 70%;
+    max-width: 500px;
+    height: auto;
+    opacity: 0.8; 
+}
+.logo-overlay {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; 
+}
+
+@media(max-width: 800px) {
+    .motto-text{
+        display: none;
+    }
+}
