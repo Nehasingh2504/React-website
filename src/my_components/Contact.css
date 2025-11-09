@@ -34,12 +34,12 @@
 /* --- Right Column (Form Card) --- */
 .contact-form-card {
   height: auto;
-  width: 100%; /* Fix overflow on small screens */
-  max-width: 600px; /* Prevent form from becoming too wide */
+  width: 100%; 
+  max-width: 600px; 
   border: none;
   border-radius: 15px;
   padding: 40px;
-  margin: 0 auto; /* Center form on smaller screens */
+  margin: 0 auto;
 }
 
 .form-title {
