@@ -4,12 +4,19 @@ body {
     background-color: #e7a09d;
 }
 
+.body-content{
+    margin: 8% 5% 5%;
+}
+
 .page {
     background-image: url('../assets/background-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .pagetitle {
@@ -28,7 +35,8 @@ body {
     max-width: 320px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
     transition: transform 0.4s ease, box-shadow 0.4s ease;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .polaroid-card:hover {
@@ -36,9 +44,18 @@ body {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.35);
 }
 
+.caption {
+    font-size: 20px;
+    text-shadow: 1px 4px 5px #e58b88ff,1px 4px 5px black;
+}
+
 /* Tilted Effects */
 .tilt-left {
     transform: rotate(-5deg);
+}
+
+.tilt{
+    transform: rotate(0);
 }
 
 .tilt-right {
@@ -47,15 +64,6 @@ body {
 
 /* --- Tape Effect--- */
 .service-item {
-    padding: 4%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-
-.service-item::before {
-    content: "";
     position: absolute;
     width: 90px;
     height: 22px;
@@ -63,26 +71,21 @@ body {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
     z-index: 10;
     opacity: 0.8;
+    top: -2px;
 }
 
-/* Tape 1: Top-Left */
-.service-item:nth-child(1)::before {
-    top: 60px;
-    left: 0;
-    transform: rotate(-30deg);
+.service_pos1{
+    left: -7%;
+    transform: rotate(-30deg); 
 }
 
-/* Tape 2: Top-Middle */
-.service-item:nth-child(2)::before {
-    top: 40px;
+.service_pos2{
     left: 40%;
     transform: rotate(-20deg);
 }
 
-/* Tape 3: Top-Right */
-.service-item:nth-child(3)::before {
-    top: 70px;
-    right: 0;
+.service_pos3{
+    right: -7%;
     transform: rotate(30deg);
 }
 
@@ -103,35 +106,11 @@ body {
         font-size: 1.5rem;
         margin-top: 20%;
     }
-
-    .row {
-        row-gap: 40px;
-    }
 }
 
 /* Small mobile (576px and below) */
 @media (max-width: 576px) {
-    .pagetitle {
-        margin-top: 10%;
-    }
-
-    .caption {
-        font-size: 1rem;
-    }
-
-    .service-item::before {
-        width: 100px;
-        height: 30px;
-        margin-top: -20px;
-    }
-
-    .service-item:nth-child(1)::before {
-        margin-left: 20px;
-    }
-
-    .service-item:nth-child(3)::before {
-        margin-top: -30px;
-        margin-right: 10px;
+    .body-content{
+        margin-top: 20%;
     }
 }
-
