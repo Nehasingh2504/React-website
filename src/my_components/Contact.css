@@ -28,7 +28,6 @@
   border: none;
   border-radius: 15px;
   padding: 30px;
-  margin: 0 auto;
 }
 
 .form-title {
@@ -129,3 +128,4 @@
     row-gap: 0;
   }
 }
+
