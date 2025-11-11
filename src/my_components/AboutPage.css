@@ -64,3 +64,10 @@ html,body,#root {
         display: none;
     }
 }
+
+/* Small mobile (576px and below) */
+@media (max-width: 576px){
+    .about-page {
+    background-image: url('../assets/background-2.png');
+    }
+}
