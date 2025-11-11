@@ -8,7 +8,7 @@ This project demonstrates my skills in **frontend development, responsive UI des
 
 ## 🚀 Live Demo
 
-🔗 **[View on Vercel](react-website-eosin-ten.vercel.app)**  
+🔗 **[View on Vercel](https://react-website-eosin-ten.vercel.app/)**  
 
 ---
 
