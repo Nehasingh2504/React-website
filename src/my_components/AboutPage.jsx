@@ -16,7 +16,7 @@ function AboutPage() {
 
             {/* Left */}
             <div className=" col-lg-6 col-md-6 pt-4">
-              <h2 className="text-center " style={{ color: '#32465a', fontFamily: 'cursive', textShadow: '1px 4px 5px #e58b88ff,1px 4px 5px black ' }}>
+              <h2 className="text-center fs-2 mb-4" style={{ color: '#32465a', fontFamily: 'cursive', textShadow: '1px 4px 5px #e58b88ff,1px 4px 5px black ' }}>
                 A montage of familiar faces and names.
               </h2>
 
@@ -60,5 +60,6 @@ function AboutPage() {
 }
 
 export default AboutPage;
+
 
 
