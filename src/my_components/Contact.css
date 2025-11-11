@@ -1,7 +1,7 @@
 /* Background setup */
 .main-page-container {
-  background-image: url('../assets/background-img.png'); 
-  background-repeat: no-repeat; 
+  background-image: url('../assets/background-img.png');
+  background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   min-height: 100vh;
@@ -14,7 +14,7 @@
 .contact-intro-text {
   color: #34495e;
   font-size: 20px;
-  font-family: 'SerifFont', serif; 
+  font-family: 'SerifFont', serif;
   font-style: italic;
   display: block;
   line-height: 1.6;
@@ -23,8 +23,8 @@
 /* --- Right Column (Form Card) --- */
 .contact-form-card {
   height: auto;
-  width: 100%; 
-  max-width: 600px; 
+  width: 100%;
+  max-width: 600px;
   border: none;
   border-radius: 15px;
   padding: 30px;
@@ -62,7 +62,7 @@
   background-color: orangered;
   color: white;
   border: none;
-  border-radius: 30px; 
+  border-radius: 30px;
   font-weight: 600;
   font-size: 1.1rem;
   display: flex;
@@ -97,6 +97,7 @@
   .contact-intro-text {
     display: none;
   }
+
   .contact-form-card {
     padding: 30px;
     max-width: 90%;
@@ -109,19 +110,22 @@
     background-image: url('../assets/background-2.png');
     padding: 20px 10px;
   }
+
   .form-title {
     font-size: 25px;
     justify-content: center;
   }
+
   .form-subtitle {
     font-size: 0.95rem;
     text-align: center;
   }
+
   .custom-submit-btn {
     width: 100%;
   }
-  .row{
+
+  .row {
     row-gap: 0;
   }
 }
-
