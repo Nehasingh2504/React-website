@@ -43,7 +43,7 @@ function AboutPage() {
 
             </div>
 
-            {/* Right Column: Motto/Graphic */}
+            {/* Right */}
             <div className="col-lg-6 col-md-6 text-end position-relative">
               <p className="motto-text fs-3 m-5 text-center" style={{ color: '#32465a', zIndex: 10 }}>
                 Every project is more than just a brief
@@ -60,3 +60,4 @@ function AboutPage() {
 }
 
 export default AboutPage;
+
